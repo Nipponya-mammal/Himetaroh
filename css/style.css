@@ -1,0 +1,217 @@
+ @import url(sanitize.css);
+ /* google font で作成したアイコンを挿入 */
+ @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+ body {
+   background-color: rgb(19, 5, 99);
+   padding: 30px;
+   font-size: 14px;
+   color: #666;
+ }
+ 
+ .container {
+   max-width: 800px;
+   margin: 0 auto;
+   box-shadow: 0 0 10px rgba(14, 22, 134, 0.7);
+ }
+
+ header {
+   background-color: rgb(13, 62, 223);
+   padding: 10px;
+   color: #fff;
+ }
+
+ header h1 {
+   margin: 0;
+   font-size: 24px;
+   font-weight: normal;
+   text-align: center;
+   /* Googleフォントで作成した文字体を挿入 */
+   font-family: 'Kosugi Maru', sans-serif;
+  }
+
+  .content {
+    background-color: #fff;
+    padding: 30px 50px 30px 50px;
+    
+  }
+ 
+  .subject h1 {
+    font-size: 18px;
+    margin: 0 15px 10px 0;
+    float: left;
+  }
+
+.type {
+    background-color: #E35A4D;
+    display: inline;
+    padding: 3px 5px;
+    font-size: 80%;
+    color: #fff;
+  }
+
+.description {
+  /* float 解除 */
+  clear: left;
+  display: flex;
+}
+
+/* .parent { 
+  transition: all 1.0s; 
+ }*/ 
+
+.tama1 {
+  /* float: left; */
+  display:block;
+  width: 150px;
+  height: 150px;
+  margin: 0 50px 10px 20px;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+ }
+
+ .tama2 {
+  /* position: absolute; */
+  /* top: 0; */
+  display: block;
+  /* visibility:hidden;
+  opacity: 0; */
+  width: 150px;
+  height: 150px;
+  margin: 35px auto;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+ .tama3 {
+  /* float: left; */
+  display:block;
+  width: 150px;
+  height: 150px;
+  margin: 0 0px 10px 60px;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+ }
+
+ /* .active {
+   visibility: visible;
+   opacity: 1;
+ } */
+
+ .tama1:hover {
+   opacity: .5;
+ }
+
+ .tama2:hover {
+   opacity: .5;
+ }
+
+ .tama3:hover {
+  opacity: .5;
+}
+
+ .ask {
+   margin: 20px 0 0 30px;
+ }
+
+ .input {
+  width: 200px;
+  height: 30px;
+}
+
+ 
+ .click2 {
+   display: block;
+   margin:20px auto;
+ }
+
+.details {
+  margin: 20px 0 30px;
+}
+
+.details h2 {
+  /* float 解除 */
+  color:#fff;
+  clear: left;
+  font-size: 100%;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(49, 86, 189);
+  padding: 5px 10px;
+}
+
+.details p {
+  padding: 20px;
+  
+}
+
+/* float 解除のための記述 */
+/* .clearfix:after {
+  content:" ";
+  display: table;
+  clear: both;
+} */
+
+footer {
+  text-align: center;
+  font-size: 80%;
+  padding: 5px;
+  background-color: rgb(81, 201, 238);
+}
+
+.ask2 {
+  /* float:right; */
+  display:none;
+  margin: 0 auto;
+  /* position: absolute; */
+  /* top: 30%;
+  left:44%; */
+  /* visibility:hidden;
+  opacity: 0; */
+  
+}
+
+
+/* メデイアクエリ */
+@media only screen and (max-width: 600px) {
+
+  .ask {
+    margin:20px 0 30px 10px;
+  }
+
+  .description {
+    /* float 解除 */
+    flex-wrap: wrap;
+  }
+
+  .tama1 { 
+    margin: 20px 0 0 30px;  
+
+  }.tama3 { 
+    margin: 10px 0 10px 30px;    
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .subject h1 {
+    font-size: 15px;
+  }
+
+  .type {
+    font-size: 65%;
+  }
+
+}
