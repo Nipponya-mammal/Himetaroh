@@ -13,6 +13,12 @@ $(function() {
     
    }); 
 
+  //  通常の記述でうまくいかない時　ドキュメント全体でイベントを受け取る
+  //  $(document).on('click', '.click1',
+  //   function(){
+  //   $(".details").fadeIn(3000);
+  //  }); 
+
 
 
 });

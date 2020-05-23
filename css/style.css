@@ -136,6 +136,7 @@
 
 .details {
   margin: 20px 0 30px;
+  /* display:none; */
 }
 
 .details h2 {
