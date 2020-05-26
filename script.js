@@ -19,8 +19,20 @@ $(function() {
   //   $(".details").fadeIn(3000);
   //  }); 
 
-
-
+  
+  
 });
 
 
+// ネットでsubmitイベントを検索した結果　failed...
+
+// function logSubmit(event) {
+//   const ask2 = document.querySelector('ask2');
+//   const content = document.querySelector('content');
+//   content.fadeOut(1500);
+//   ask2.fadeIn(1500);
+//   event.preventDefault();
+// }
+
+// const form = document.getElementById('form');
+// form.addEventListener('submit', logSubmit);
